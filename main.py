@@ -24,7 +24,7 @@ dp = Dispatcher()
 # Команда /start
 @dp.message(Command("start"))
 async def start(message: Message):
-    await message.answer(f"Приве, {hbold(message.from_user.first_name)}! Я бот ChatGPT. Напиши мне что-нибудь!")
+    await message.answer(f"Привет, {hbold(message.from_user.first_name)}! Я бот ChatGPT. Напиши мне что-нибудь!")
 
 
 # Обработчик текстовых сообщений

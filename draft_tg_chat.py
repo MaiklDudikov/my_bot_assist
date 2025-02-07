@@ -17,7 +17,7 @@ bot = telebot.TeleBot(telegram_token)
 
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id, "Приве! Я бот на основе искуственного интелекта chatGPT, готовый помочь Вам. Просто напишите мне что-нибудь!")
+    bot.send_message(message.chat.id, "Привет! Я бот на основе искуственного интелекта chatGPT, готовый помочь Вам. Просто напишите мне что-нибудь!")
 
 
 @bot.message_handler(commands=['send_voice'])
