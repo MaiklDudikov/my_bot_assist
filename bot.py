@@ -24,7 +24,7 @@ async def cmd_help(message: Message):
 
 @dp.message(F.text == 'Привет')
 async def hello(message: Message):
-    await message.reply('Как дела ?')
+    await message.reply('Привет, как дела ?')
 
 
 # @dp.message()
@@ -37,7 +37,7 @@ async def main():
     await dp.start_polling(bot)
 
 
-async def startup(dispatcher: Dispatcher):
+async def startup():
     print('Бот запущен ...')
 
 
