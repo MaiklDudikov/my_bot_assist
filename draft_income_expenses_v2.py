@@ -80,6 +80,7 @@ async def add_transaction(message: Message):
 
     transaction_type = "income" if amount > 0 else "expenses"
     category = category.strip()
+    amount = abs(amount)  # Убираем возможный минус, так как расходы уже хранятся отдельно
 
     if category not in data[transaction_type]:
         data[transaction_type][category] = {}
