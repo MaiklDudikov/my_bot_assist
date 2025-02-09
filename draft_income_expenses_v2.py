@@ -35,7 +35,7 @@ pattern = re.compile(r"(\D+?)\s*(-?\d+)")
 # Команда /start
 @dp.message(CommandStart())
 async def cmd_start(message: Message):
-    await message.answer(f"Привет, {message.from_user.first_name}. Я бот считающий доходы и расходы.")
+    await message.answer(f"Приве, {message.from_user.first_name}. Я бот считающий доходы и расходы.")
     await message.answer("Используй формат : название сумма\n(например : зарплата 5000 или еда -1000)\n"
                          "Проверить баланс /balance")
 
