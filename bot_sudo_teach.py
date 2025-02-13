@@ -6,6 +6,9 @@ from aiogram.filters import CommandStart, Command, CommandObject
 from dotenv import load_dotenv
 # from config import TOKEN
 
+# боту писать цену покупки (buy_price) и продажи (sell_price), а он пусть в ответ присылает сколько прибыль (в процентах)
+# profit_percent = ((sellPrice - buyPrice) / buyPrice) * 100;
+
 # token=TOKEN
 load_dotenv()
 bot = Bot(token=os.getenv('TELEGRAM_BOT_TOKEN'))
